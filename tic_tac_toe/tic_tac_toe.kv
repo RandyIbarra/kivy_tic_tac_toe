@@ -1,0 +1,82 @@
+GridLayout:
+
+    padding: 100
+
+    rows: 3
+
+    GridLayout:
+
+        # set the size to half the window size
+        size_hint: .5, .5
+
+        # place on the middle of the window
+        pos_hint: {'center_x': .5, 'center_y': .5}
+
+        cols: 3
+        rows: 3
+        
+        Button:
+            id: upper_left
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(upper_left)
+            
+        Button:
+            id: upper_center
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(upper_center)
+            
+        Button:
+            id: upper_right
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(upper_right)
+            
+        Button:
+            id: middle_left
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(middle_left)
+            
+        Button:
+            id: middle_center
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(middle_center)
+            
+        Button:
+            id: middle_right
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(middle_right)
+            
+        Button:
+            id: lower_left
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(lower_left)
+            
+        Button:
+            id: lower_center
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(lower_center)
+            
+        Button:
+            id: lower_right
+            text: ''
+            font_size: '45sp'
+            on_release: app.presser(lower_right)
+    
+    Label:
+        id: score
+        text: 'X goes first'
+        halign: 'center'
+        pos_hint: {'center_y': .9}     
+
+    Button:
+        id: restart
+        text: 'restart'
+        font_size: '45sp'
+        on_release: app.restart()  
